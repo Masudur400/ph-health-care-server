@@ -1,5 +1,5 @@
 import { IJWTPayload } from "../../../types/common";
-import { prisma } from "../../shared/prisma"; 
+import { prisma } from "../../shared/prisma";
 
 const insertIntoDB = async (user: IJWTPayload, payload: {
     scheduleIds: string[]
