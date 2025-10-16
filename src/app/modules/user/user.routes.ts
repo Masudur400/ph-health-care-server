@@ -2,7 +2,7 @@ import express, { NextFunction, Request, Response } from 'express'
 import { UserController } from './user.controller';
 import { fileUploader } from '../../helper/fileUploader';
 import { UserValidation } from './user.validation';
-import { UserRole } from '@prisma/client'; 
+import { UserRole } from '@prisma/client';
 import auth from '../../middlewares/auth';
 
 
