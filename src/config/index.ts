@@ -16,5 +16,6 @@ export default {
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
         api_key: process.env.CLOUDINARY_API_KEY
     },
-    BCRYPT_SALT_ROUND: process.env.BCRYPT_SALT_ROUND as string
+    BCRYPT_SALT_ROUND: process.env.BCRYPT_SALT_ROUND as string,
+    OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY as string
 }
