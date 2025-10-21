@@ -17,5 +17,10 @@ export default {
         api_key: process.env.CLOUDINARY_API_KEY
     },
     BCRYPT_SALT_ROUND: process.env.BCRYPT_SALT_ROUND as string,
-    OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY as string
+    OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY as string,
+    stripe: {
+        STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY as string,
+        CLIENT_URL: process.env.CLIENT_URL as string,
+    },
+    WEB_HOOK_SECRET: process.env.WEB_HOOK_SECRET as string,
 }
