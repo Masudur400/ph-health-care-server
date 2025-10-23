@@ -11,10 +11,17 @@ export default {
     JWT_ACCESS_EXPIRES: process.env.JWT_ACCESS_EXPIRES as string,
     JWT_REFRESH_SECRET: process.env.JWT_REFRESH_SECRET as string,
     JWT_REFRESH_EXPIRES: process.env.JWT_REFRESH_EXPIRES as string,
+    RESET_PASS_SECRET: process.env.RESET_PASS_SECRET as string,
+    RESET_PASS_TOKEN_EXPIRES_IN: process.env.RESET_PASS_TOKEN_EXPIRES_IN as string,
+    RESET_PASS_LINK: process.env.RESET_PASS_LINK as string,
     cloudinary: {
         api_secret: process.env.CLOUDINARY_API_SECRET,
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
         api_key: process.env.CLOUDINARY_API_KEY
+    },
+    emailSender: {
+        email: process.env.SMTP_USER,
+        app_pass: process.env.SMTP_PASS
     },
     BCRYPT_SALT_ROUND: process.env.BCRYPT_SALT_ROUND as string,
     OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY as string,
