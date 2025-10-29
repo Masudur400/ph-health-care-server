@@ -1,8 +1,8 @@
 {
   "name": "ph-health-care-starter",
   "version": "1.0.0",
-  "main": "server.js",
-  "author": "shafayat",
+  "main": "server.js", 
+  "author": "",
   "license": "MIT",
   "prisma": {
     "schema": "./prisma/schema"
@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
     "migrate": "prisma migrate dev --name init",
-    "prisma": "prisma"
+    "prisma": "prisma" ,
+    "generate": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^6.16.3",
@@ -28,7 +29,8 @@
     "nodemailer": "^7.0.10",
     "openai": "^6.5.0",
     "stripe": "^19.1.0",
-    "uuid": "^13.0.0",
+    "uuid": "^8.3.2",
+
     "zod": "^4.1.11"
   },
   "devDependencies": {
@@ -41,6 +43,7 @@
     "@types/nodemailer": "^7.0.2",
     "prisma": "^6.16.3",
     "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.2"
   }
 }
